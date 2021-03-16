@@ -5,7 +5,7 @@ import segmentation_models_pytorch as smp
 
 
 
-class TriUnet(smp.Unet):
+class TripleUnet(smp.UnetPlusPlus):
     
     def __init__(self, 
         encoder_name: str = "resnet34",

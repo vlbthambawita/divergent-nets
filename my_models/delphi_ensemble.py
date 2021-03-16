@@ -5,7 +5,7 @@ import segmentation_models_pytorch as smp
 
 
 
-class DivergentNets(smp.Unet):
+class DelphiEnsemble(smp.UnetPlusPlus):
     
     def __init__(self, opt,
         encoder_name: str = "resnet34",
