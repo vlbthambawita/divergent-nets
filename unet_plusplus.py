@@ -55,52 +55,53 @@ parser.add_argument("--py_file",default=os.path.abspath(__file__)) # store curre
 
 
 # Directory and file handling
+# Directory and file handling
 parser.add_argument("--train_CSVs", 
-                    default=["/work/vajira/DATA/EndoCV_2021/CSV_file_with_paths_new_v2/C1.csv",
-                    "/work/vajira/DATA/EndoCV_2021/CSV_file_with_paths_new_v2/C2.csv",
-                    "/work/vajira/DATA/EndoCV_2021/CSV_file_with_paths_new_v2/C3.csv",
-                    "/work/vajira/DATA/EndoCV_2021/CSV_file_with_paths_new_v2/C4.csv",
-                    "/work/vajira/DATA/EndoCV_2021/CSV_file_with_paths_new_v2/C5.csv",
-                    "/work/vajira/DATA/EndoCV_2021/CSV_file_with_paths_new_v2/seq1_neg.csv",
-                    "/work/vajira/DATA/EndoCV_2021/CSV_file_with_paths_new_v2/seq2_neg.csv",
-                    "/work/vajira/DATA/EndoCV_2021/CSV_file_with_paths_new_v2/seq3_neg.csv",
-                    "/work/vajira/DATA/EndoCV_2021/CSV_file_with_paths_new_v2/seq4_neg.csv",
-                    "/work/vajira/DATA/EndoCV_2021/CSV_file_with_paths_new_v2/seq5_neg.csv"],
+                    default=["/work/vajira/data/EndoCV_2021/CSV_file_with_paths_new_v2/C1.csv",
+                    "/work/vajira/data/EndoCV_2021/CSV_file_with_paths_new_v2/C2.csv",
+                    "/work/vajira/data/EndoCV_2021/CSV_file_with_paths_new_v2/C3.csv",
+                    "/work/vajira/data/EndoCV_2021/CSV_file_with_paths_new_v2/C4.csv",
+                    "/work/vajira/data/EndoCV_2021/CSV_file_with_paths_new_v2/C5.csv",
+                    "/work/vajira/data/EndoCV_2021/CSV_file_with_paths_new_v2/seq1_neg.csv",
+                    "/work/vajira/data/EndoCV_2021/CSV_file_with_paths_new_v2/seq2_neg.csv",
+                    "/work/vajira/data/EndoCV_2021/CSV_file_with_paths_new_v2/seq3_neg.csv",
+                    "/work/vajira/data/EndoCV_2021/CSV_file_with_paths_new_v2/seq4_neg.csv",
+                    "/work/vajira/data/EndoCV_2021/CSV_file_with_paths_new_v2/seq5_neg.csv"],
                     help="CSV file list with image and mask paths")
 
 parser.add_argument("--val_CSVs",
-                    default=["/work/vajira/DATA/EndoCV_2021/CSV_file_with_paths_new_v2/seq1.csv",
-                    "/work/vajira/DATA/EndoCV_2021/CSV_file_with_paths_new_v2/seq2.csv",
-                    "/work/vajira/DATA/EndoCV_2021/CSV_file_with_paths_new_v2/seq3.csv",
-                    "/work/vajira/DATA/EndoCV_2021/CSV_file_with_paths_new_v2/seq4.csv",
-                    "/work/vajira/DATA/EndoCV_2021/CSV_file_with_paths_new_v2/seq5.csv",
-                    "/work/vajira/DATA/EndoCV_2021/CSV_file_with_paths_new_v2/seq6.csv",
-                    "/work/vajira/DATA/EndoCV_2021/CSV_file_with_paths_new_v2/seq7.csv",
-                    "/work/vajira/DATA/EndoCV_2021/CSV_file_with_paths_new_v2/seq8.csv",
-                    "/work/vajira/DATA/EndoCV_2021/CSV_file_with_paths_new_v2/seq9.csv",
-                    "/work/vajira/DATA/EndoCV_2021/CSV_file_with_paths_new_v2/seq10.csv",
-                    "/work/vajira/DATA/EndoCV_2021/CSV_file_with_paths_new_v2/seq11.csv",
-                    "/work/vajira/DATA/EndoCV_2021/CSV_file_with_paths_new_v2/seq12.csv",
-                    "/work/vajira/DATA/EndoCV_2021/CSV_file_with_paths_new_v2/seq13.csv",
-                    "/work/vajira/DATA/EndoCV_2021/CSV_file_with_paths_new_v2/seq14.csv",
-                    "/work/vajira/DATA/EndoCV_2021/CSV_file_with_paths_new_v2/seq15.csv",
-                    "/work/vajira/DATA/EndoCV_2021/CSV_file_with_paths_new_v2/seq6_neg.csv",
-                    "/work/vajira/DATA/EndoCV_2021/CSV_file_with_paths_new_v2/seq7_neg.csv",
-                    "/work/vajira/DATA/EndoCV_2021/CSV_file_with_paths_new_v2/seq8_neg.csv",
-                    "/work/vajira/DATA/EndoCV_2021/CSV_file_with_paths_new_v2/seq9_neg.csv",
-                    "/work/vajira/DATA/EndoCV_2021/CSV_file_with_paths_new_v2/seq10_neg.csv"],
+                    default=["/work/vajira/data/EndoCV_2021/CSV_file_with_paths_new_v2/seq1.csv",
+                    "/work/vajira/data/EndoCV_2021/CSV_file_with_paths_new_v2/seq2.csv",
+                    "/work/vajira/data/EndoCV_2021/CSV_file_with_paths_new_v2/seq3.csv",
+                    "/work/vajira/data/EndoCV_2021/CSV_file_with_paths_new_v2/seq4.csv",
+                    "/work/vajira/data/EndoCV_2021/CSV_file_with_paths_new_v2/seq5.csv",
+                    "/work/vajira/data/EndoCV_2021/CSV_file_with_paths_new_v2/seq6.csv",
+                    "/work/vajira/data/EndoCV_2021/CSV_file_with_paths_new_v2/seq7.csv",
+                    "/work/vajira/data/EndoCV_2021/CSV_file_with_paths_new_v2/seq8.csv",
+                    "/work/vajira/data/EndoCV_2021/CSV_file_with_paths_new_v2/seq9.csv",
+                    "/work/vajira/data/EndoCV_2021/CSV_file_with_paths_new_v2/seq10.csv",
+                    "/work/vajira/data/EndoCV_2021/CSV_file_with_paths_new_v2/seq11.csv",
+                    "/work/vajira/data/EndoCV_2021/CSV_file_with_paths_new_v2/seq12.csv",
+                    "/work/vajira/data/EndoCV_2021/CSV_file_with_paths_new_v2/seq13.csv",
+                    "/work/vajira/data/EndoCV_2021/CSV_file_with_paths_new_v2/seq14.csv",
+                    "/work/vajira/data/EndoCV_2021/CSV_file_with_paths_new_v2/seq15.csv",
+                    "/work/vajira/data/EndoCV_2021/CSV_file_with_paths_new_v2/seq6_neg.csv",
+                    "/work/vajira/data/EndoCV_2021/CSV_file_with_paths_new_v2/seq7_neg.csv",
+                    "/work/vajira/data/EndoCV_2021/CSV_file_with_paths_new_v2/seq8_neg.csv",
+                    "/work/vajira/data/EndoCV_2021/CSV_file_with_paths_new_v2/seq9_neg.csv",
+                    "/work/vajira/data/EndoCV_2021/CSV_file_with_paths_new_v2/seq10_neg.csv"],
                     help="CSV file list with image and mask paths")
 
 parser.add_argument("--test_CSVs",
-                    default=["/work/vajira/DATA/EndoCV_2021/CSV_file_with_paths_new_v2/kvasir_seg.csv"],
+                    default=["/work/vajira/data/EndoCV_2021/CSV_file_with_paths/kvasir_seg.csv"],
                     help="CSV file list with image and mask paths")
 
 parser.add_argument("--out_dir", 
-                    default="/work/vajira/DATA/EndoCV_2021/2xx_checkpoints",
+                    default="/work/vajira/DATA/EndoCV_2021/temp_checkpoints",
                     help="Main output dierectory")
 
 parser.add_argument("--tensorboard_dir", 
-                    default="/work/vajira/DATA/EndoCV_2021/2xx_tensorboard",
+                    default="/work/vajira/DATA/EndoCV_2021/temp_tensorboard",
                     help="Folder to save output of tensorboard")
 
 parser.add_argument("--test_out_dir",
@@ -129,7 +130,7 @@ parser.add_argument("--grid_sizes_test", type=list, default=[256], help="Grid si
 parser.add_argument("--in_channels", type=int, default=3, help="Number of input channgels")
 
 # Parameters
-parser.add_argument("--bs", type=int, default=8, help="Mini batch size")
+parser.add_argument("--bs", type=int, default=16, help="Mini batch size")
 parser.add_argument("--val_bs", type=int, default=1, help="Batch size")
 parser.add_argument("--lr", type=float, default=0.0001, help="Learning rate for training")
 parser.add_argument("--lr_change_point", type=int, default=50, help="After this point LR will be changed.")
