@@ -42,17 +42,39 @@ unet_plusplus.py
 deeplabv3.py
 deeplabv3_plusplus.py
 ```
+-------
+## Pretrained checkpoint paths
+- [https://github.com/vlbthambawita/divergent-net/releases/download/checkpoints_v1/best_checkpoint_Deeplabv3.pth](https://github.com/vlbthambawita/divergent-net/releases/download/checkpoints_v1/best_checkpoint_Deeplabv3.pth) 
+- [https://github.com/vlbthambawita/divergent-net/releases/download/checkpoints_v1/best_checkpoint_Depplabv3_plusplus.pth](https://github.com/vlbthambawita/divergent-net/releases/download/checkpoints_v1/best_checkpoint_Depplabv3_plusplus.pth)
+- [https://github.com/vlbthambawita/divergent-net/releases/download/checkpoints_v1/best_checkpoint_FPN.pth](https://github.com/vlbthambawita/divergent-net/releases/download/checkpoints_v1/best_checkpoint_FPN.pth)
+- [https://github.com/vlbthambawita/divergent-net/releases/download/checkpoints_v1/best_checkpoint_TriUnet.pth](https://github.com/vlbthambawita/divergent-net/releases/download/checkpoints_v1/best_checkpoint_TriUnet.pth)
+- [https://github.com/vlbthambawita/divergent-net/releases/download/checkpoints_v1/best_checkpoint_unet_plusplus.pth](https://github.com/vlbthambawita/divergent-net/releases/download/checkpoints_v1/best_checkpoint_unet_plusplus.pth)
 
-
-
+-------
 ## DivergentNet
 ![DivergentNet](images/EndoCV_2021_diagrams_Delphi_esemble_v2.png)
 
 
-## Merging and predicting from divergent network
-How?
+## Merging and predicting from divergent networks
 
-### Sample predictions from different models used in DivergentNet and it's own output.
+Set following parameters in **inference_from_divergentNets.sh**
+
+```bash
+--input_dir <directory to input images>
+--output_dir <directory to save prected mask>
+--chk_paths <path to pretrained checkpoints. You can provide single checkpoint path or multiple checkpoint paths. Use a space to seperate multiple checkpoint paths or '\' as the given example paths.>
+```
+
+Then run it:
+```bash
+bash inference_from_divergentNets.sh
+```
+
+
+
+-----
+
+## Sample predictions from different models used in DivergentNet and it's own output.
 ![predictions](images/predictions.png)
 
 
@@ -60,5 +82,9 @@ How?
 ```python
 TBA
 ```
+
+## Contact us:
+
+### [vajira@simula.no](vajira@simula.no), [steven@simula.no](steven@simula.no), [michael@simula.no](michael@simula.no)
 
 
