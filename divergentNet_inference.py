@@ -37,14 +37,10 @@ def get_argparser():
                         help="random seed (default: 1)")
     
     parser.add_argument("--task_type", default="segmentation", help="task type")
-    
+
+    parser.add_argument("chk_paths", default=" ",  nargs="+", help="Checkpoints")    
 
     return parser
-
-
-
-
-
 
 
 def create_predFolder(task_type):
@@ -109,6 +105,11 @@ def mymodel(opt):
     
     os.environ['CUDA_VISIBLE_DEVICES'] = opt.gpu_id
     opt.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+
+
+
+    for chk_path in opt.chk_paths:
+        pass
  
     checkpoint_4 = torch.load('/work/vajira/data/EndoCV_2021/best_checkpoints/best_checkpoint_Deeplabv3.pth', map_location=opt.device)
     checkpoint_6 = torch.load('/work/vajira/data/EndoCV_2021/best_checkpoints/best_checkpoint_Depplabv3_plusplus.pth', map_location=opt.device)
