@@ -61,7 +61,7 @@ Set following parameters in **inference_from_divergentNets.sh**
 
 ```bash
 --input_dir <directory to input images>
---output_dir <directory to save prected mask>
+--output_dir <directory to save predicted mask>
 --chk_paths <path to pretrained checkpoints. You can provide single checkpoint path or multiple checkpoint paths. Use a space to seperate multiple checkpoint paths or '\' as the given example paths.>
 ```
 
@@ -74,7 +74,7 @@ bash inference_from_divergentNets.sh
 
 -----
 
-## Sample predictions from different models used in DivergentNet and it's own output.
+## Sample predictions from different models used in DivergentNets and it's own output.
 ![predictions](images/predictions.png)
 
 
