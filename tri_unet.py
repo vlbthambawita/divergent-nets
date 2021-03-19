@@ -58,6 +58,7 @@ parser.add_argument("--py_file",default=os.path.abspath(__file__)) # store curre
 
 # Directory and file handling
 parser.add_argument("--train_CSVs", 
+                    nargs="+",
                     default=["/work/vajira/data/EndoCV_2021/CSV_file_with_paths_new_v2/C1.csv",
                     "/work/vajira/data/EndoCV_2021/CSV_file_with_paths_new_v2/C2.csv",
                     "/work/vajira/data/EndoCV_2021/CSV_file_with_paths_new_v2/C3.csv",
@@ -71,6 +72,7 @@ parser.add_argument("--train_CSVs",
                     help="CSV file list with image and mask paths")
 
 parser.add_argument("--val_CSVs",
+                    nargs="+",
                     default=["/work/vajira/data/EndoCV_2021/CSV_file_with_paths_new_v2/seq1.csv",
                     "/work/vajira/data/EndoCV_2021/CSV_file_with_paths_new_v2/seq2.csv",
                     "/work/vajira/data/EndoCV_2021/CSV_file_with_paths_new_v2/seq3.csv",
@@ -94,6 +96,7 @@ parser.add_argument("--val_CSVs",
                     help="CSV file list with image and mask paths")
 
 parser.add_argument("--test_CSVs",
+                    nargs="+",
                     default=["/work/vajira/data/EndoCV_2021/CSV_file_with_paths/kvasir_seg.csv"],
                     help="CSV file list with image and mask paths")
 
