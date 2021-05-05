@@ -52,7 +52,7 @@ deeplabv3_plusplus.py
 
 -------
 ## DivergentNet
-![DivergentNet](images/EndoCV_2021_diagrams_Delphi_esemble_v2.png)
+![DivergentNet](images/EndoCV_2021_diagrams_divergentNets.png)
 
 
 ## Merging and predicting from divergent networks
