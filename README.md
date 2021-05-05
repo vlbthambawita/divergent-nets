@@ -69,7 +69,10 @@ Then run it:
 ```bash
 bash inference_from_divergentNets.sh
 ```
-
+For Windows users we provide an inference script that supports windows. You can run it without the bash. For example:
+```bash
+python inference_from_divergentNets.py --input_dir C:\Users\xxx\GitHub\divergent-nets\input --output_dir C:\Users\xxx\GitHub\divergent-nets\output --chk_paths C:\Users\xxx\OneDrive\Dokumente\GitHub\divergent-nets\checkpoints\best_checkpoint_Deeplabv3.pth
+```
 
 
 -----
