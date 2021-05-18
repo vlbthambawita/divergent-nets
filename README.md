@@ -82,7 +82,7 @@ python inference_from_divergentNets.py --input_dir C:\Users\xxx\GitHub\divergent
 
 
 ## Citation
-```python
+```latex
 @inproceedings{divergentNets,
   title={DivergentNets: Medical Image Segmentation by Network Ensemble.},
   author={Thambawita, Vajira and Hicks, Steven A. and Halvorsen, P{\aa}l and Riegler, Michael A.},
