@@ -1,5 +1,6 @@
 # Endocv2021-winner 
-[[Paper]](http://ceur-ws.org/Vol-2886/paper3.pdf)
+# [[Paper]](http://ceur-ws.org/Vol-2886/paper3.pdf)
+
 This is the winning solution of the  Endocv-2021 grand challange.
 
 ### Dependencies 
