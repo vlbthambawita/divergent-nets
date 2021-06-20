@@ -1,4 +1,4 @@
-# Endocv2021-winner
+# Endocv2021-winner [Paper](http://ceur-ws.org/Vol-2886/paper3.pdf)
 This is the winning solution of the  Endocv-2021 grand challange.
 
 ### Dependencies 
@@ -86,8 +86,7 @@ python inference_from_divergentNets.py --input_dir C:\Users\xxx\GitHub\divergent
 @inproceedings{divergentNets,
   title={DivergentNets: Medical Image Segmentation by Network Ensemble.},
   author={Thambawita, Vajira and Hicks, Steven A. and Halvorsen, P{\aa}l and Riegler, Michael A.},
-  booktitle={EndoCV@ ISBI},
-  pages={},
+  booktitle={In proceedings of EndoCV at IEEE International Symposium on Biomedical Imaging (ISBI)},
   year={2021}
 }
 ```
