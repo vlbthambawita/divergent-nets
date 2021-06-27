@@ -86,9 +86,10 @@ python inference_from_divergentNets.py --input_dir C:\Users\xxx\GitHub\divergent
 ## Citation
 ```latex
 @inproceedings{divergentNets,
-  title={DivergentNets: Medical Image Segmentation by Network Ensemble.},
+  title={DivergentNets: Medical Image Segmentation by Network Ensemble},
   author={Thambawita, Vajira and Hicks, Steven A. and Halvorsen, P{\aa}l and Riegler, Michael A.},
-  booktitle={In proceedings of EndoCV at IEEE International Symposium on Biomedical Imaging (ISBI)},
+  booktitle={Proceedings of the 3rd International Workshop and Challenge on Computer Vision in Endoscopy (EndoCV 2021)
+co-located with with the 17th IEEE International Symposium on Biomedical Imaging (ISBI 2021)},
   year={2021}
 }
 ```
